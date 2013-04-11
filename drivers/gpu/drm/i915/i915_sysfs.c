@@ -347,7 +347,7 @@ static ssize_t gt_max_freq_mhz_show(struct device *kdev, struct device_attribute
 	flush_delayed_work(&dev_priv->rps.delayed_resume_work);
 
 	mutex_lock(&dev_priv->rps.hw_lock);
-	ret = dev_priv->rps.hw_max * GT_FREQUENCY_MULTIPLIER;
+	ret = dev_priv->rps.max_delay * GT_FREQUENCY_MULTIPLIER;
 	mutex_unlock(&dev_priv->rps.hw_lock);
 
 	return snprintf(buf, PAGE_SIZE, "%d\n", ret);
