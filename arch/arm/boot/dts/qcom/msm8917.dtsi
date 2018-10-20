@@ -23,7 +23,7 @@
 	interrupt-parent = <&intc>;
 
 	chosen {
-		bootargs = "sched_enable_hmp=1";
+		bootargs = "sched_enable_hmp=1 nowatchdog nosoftlockup=0 quiet audit=0 noirqdebug mce=ignore_ce";
 	};
 
 	aliases {
