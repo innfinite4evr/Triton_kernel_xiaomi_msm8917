@@ -99,3 +99,7 @@ all.config
 
 # fetched Android config fragments
 android/configs/android-*.cfg
+
+# cust
+build_10or_D.sh
+zimage/*
